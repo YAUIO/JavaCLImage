@@ -78,8 +78,7 @@ public class CLImage {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 int pixel = img.getRGB(x, y);
-                System.out.print(Ansi.colorize(" ", Attribute.BACK_COLOR((pixel >> 16) & 0xff, (pixel >> 8) & 0xff, pixel & 0xff)));
-                System.out.print(Ansi.colorize(" ", Attribute.BACK_COLOR((pixel >> 16) & 0xff, (pixel >> 8) & 0xff, pixel & 0xff)));
+                System.out.print(Ansi.colorize("   ", Attribute.BACK_COLOR((pixel >> 16) & 0xff, (pixel >> 8) & 0xff, pixel & 0xff)));
             }
             System.out.println();
         }
